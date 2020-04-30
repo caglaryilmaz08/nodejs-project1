@@ -1,0 +1,22 @@
+{
+  "name": "feddbcrud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Caglar Yilmaz",
+  "license": "ISC",
+  "description": "Finding documents We can find all our documents (Products) with a command like below.",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.1",
+    "node-sass-middleware": "^0.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

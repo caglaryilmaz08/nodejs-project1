@@ -1,0 +1,43 @@
+
+<%- include("partial/header.ejs") %>
+<body>
+    <% myComment.forEach( (comment)=>{ %>
+          
+          <div> <%= comment.text %></div>
+          <div><%= comment.author %></div>
+          
+
+         <a href="/update/<%=comment._id%>">Update</a>
+         <a href="/delete/<%=comment._id%>"> Delete</a>
+
+
+  <%  }) %>
+
+
+<div>
+        <form action="/createcomment" method="post">
+         
+         <input type="text" name="text" id="">
+         <input type="text" name="author" id="">
+        <button type="submit">To Do list</button>
+
+        </form>
+
+</div>
+
+<a href="/comment/sorted">Sort</a>
+    
+
+<div class="container pagination">
+        <p>Show page: </p>
+        <a href="/comment/?page=1">1</a>
+        <a href="/comment/?page=2">2</a>
+        <a href="/comment/?page=3">3</a>
+</div>
+
+
+
+
+
+<%- include("partial/footer.ejs") %>
+
